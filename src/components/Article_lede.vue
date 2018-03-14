@@ -27,7 +27,7 @@ export default {
 </script>
 
 <style lang="scss">
-  @import "./assets/styles/settings.scss";
+  @import "../assets/styles/settings.scss";
 
   .article-lede {
     position: relative;

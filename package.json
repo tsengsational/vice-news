@@ -5,7 +5,8 @@
   "scripts": {
     "serve": "vue-cli-service serve --open",
     "build": "vue-cli-service build",
-    "lint": "vue-cli-service lint"
+    "lint": "vue-cli-service lint",
+    "deploy": "node ./node_modules/vue-gh-pages/index.js"
   },
   "dependencies": {
     "vue": "^2.5.13"
@@ -41,5 +42,6 @@
     "> 1%",
     "last 2 versions",
     "not ie <= 8"
-  ]
+  ],
+  "homepage": "git@github.com:tsengsational/vice-news.git"
 }

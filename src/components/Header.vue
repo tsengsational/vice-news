@@ -77,7 +77,7 @@ export default {
 </script>
 
 <style lang="scss">
-  @import "./assets/styles/settings.scss";
+  @import "../assets/styles/settings.scss";
   header {
     position: sticky;
     top: 0;

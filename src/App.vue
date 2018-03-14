@@ -1,28 +1,61 @@
 <template>
   <div id="app">
-    <img src="./assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js App"/>
+    <div class="app-wrapper">
+      <Header/>
+      <ArticleLede :article="articleLede"/>
+      <div class="tall">
+      </div>
+    </div>
   </div>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
+import Header from './components/Header'
+import ArticleLede from './components/Article_lede'
 
 export default {
   name: 'app',
   components: {
-    HelloWorld
+    Header,
+    ArticleLede
+  },
+  data: function() {
+    return {
+      articleLede: {
+        type: 'extremism',
+        headline: 'Austria’s far-right frat boys have made it into government. There’s reason to be freaked out.',
+        image: {
+          photo: 'https://video-images.vice.com/articles/5aa059c1cc59160008d5ec54/lede/1520961778651-austrian-frats.jpeg?resize=1024:*'
+        }
+      }
+    }
   }
 }
 </script>
 
-<style>
+<style lang="scss">
+@import "assets/styles/settings.scss";
+body {
+  margin: 0
+}
+
+.tall {
+  height: 150vh;
+}
 #app {
-  font-family: 'Avenir', Helvetica, Arial, sans-serif;
+  font-family: $font_reg;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
+  color: $black;
 }
+
+@media (min-width: 1000px) {
+  .app-wrapper {
+    width: 1000px;
+    margin: 0 auto;
+    position: relative;
+  }
+}
+
+
 </style>

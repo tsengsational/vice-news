@@ -1,0 +1,31 @@
+$font_condensed_strong: "Founders Grotesk X-condensed", sans-serif;
+$font_strong: "Founders Grotesk Bold", sans-serif;
+$font_reg: "Founders Grotesk", sans-serif;
+$font_mono: "Founders Grotesk Mono", sans-serif;
+
+$black: #000;
+$white: #fff;
+
+@font-face {
+  font-family:"Founders Grotesk X-Condensed";
+  font-weight:900;
+  src: url('https://vice-news-statics-cdn.vice.com/static/fonts/FoundersGroteskX-CondensedWeb-Bold.eot') format('embedded-opentype'), url('https://vice-news-statics-cdn.vice.com/static/fonts/FoundersGroteskX-CondensedWeb-Bold.woff') format('woff'),url('https://vice-news-statics-cdn.vice.com/static/fonts/FoundersGroteskX-CondensedWeb-Bold.ttf') format('truetype');
+}
+@font-face {
+  font-family:"Founders Grotesk Bold";
+  font-weight:bold;
+  font-style:normal;
+  src: url('https://vice-news-statics-cdn.vice.com/static/fonts/FoundersGroteskWeb-Bold.eot') format('embedded-opentype'),url('https://vice-news-statics-cdn.vice.com/static/fonts/FoundersGroteskWeb-Bold.woff') format('woff'),url('https://vice-news-statics-cdn.vice.com/static/fonts/FoundersGroteskWeb-Bold.ttf') format('truetype');
+}
+@font-face {
+  font-family:"Founders Grotesk";
+  font-weight:bold;
+  style:normal;
+  src:url('https://vice-news-statics-cdn.vice.com/static/fonts/FoundersGroteskWeb-Regular.eot') format('embedded-opentype'),url('https://vice-news-statics-cdn.vice.com/static/fonts/FoundersGroteskWeb-Regular.woff') format('woff'),url('https://vice-news-statics-cdn.vice.com/static/fonts/FoundersGroteskWeb-Regular.ttf') format('truetype');
+}
+@font-face {
+  font-family:"Founders Grotesk Mono";
+  font-weight: normal;
+  style: normal;
+  src:url('https://vice-news-statics-cdn.vice.com/static/fonts/FoundersGroteskMonoWeb-Regular.eot') format('embedded-opentype'),url('https://vice-news-statics-cdn.vice.com/static/fonts/FoundersGroteskMonoWeb-Regular.woff') format('woff'),url('https://vice-news-statics-cdn.vice.com/static/fonts/FoundersGroteskMonoWeb-Regular.ttf') format('truetype');
+}

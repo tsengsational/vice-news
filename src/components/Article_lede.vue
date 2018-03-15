@@ -69,6 +69,8 @@ export default {
 
   @media (min-width: 1000px) {
     .article-lede {
+      width: auto;
+      left: auto;
       position: relative;
       .type {
         padding: 5px 10px 5px 0;

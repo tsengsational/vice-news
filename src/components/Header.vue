@@ -85,23 +85,23 @@ export default {
     z-index: 2;
   }
   .header-content {
-    padding: 8px 20px;
     height: 46px;
     border-bottom: 1px solid $black;
+    padding: 5px 0;
     transition: height .3s;
+    position: relative;
   }
   .header-promo {
-    font-size: 18px;
-    transition: opacity .3s;
-    strong {
-      font-family: $font_strong;
-    }
-    &.hide {
-      opacity: 0;
-    }
+    display: none;
   }
   .header-wrapper {
     position: relative;
+  }
+  .logo {
+    height: 33px;
+    margin: 0 5px;
+    position: absolute;
+    top: calc(50% - (33px / 2));
   }
   .menu-btn {
     border: 0;
@@ -136,31 +136,48 @@ export default {
     width: 17px;
   }
 
+  .nav {
+    overflow: hidden;
+    opacity: 0;
+    right: 0;
+    position: absolute;
+    transform: translateY(-110%);
+    transition: all 0.6s cubic-bezier(0.19, 1, 0.22, 1) 0s;
+    width: 100%;
+  }
+
+  .nav.open {
+    overflow: auto;
+    opacity: 1;
+    right: 0;
+    top: calc(56px - 2px);
+    transform: translateY(0px);
+  }
 
   .subscribe-btn {
-    background-color: transparent;
-    border: 1px solid $black;
-    border-radius: 3px;
-    font-size: 16px;
-    color: $black;
-    padding: 4px 15px 5px;
-    position: absolute;
-    right: 45px;
-    top: calc(50% - 15.5px);
-    transition: background-color .2s, color .2s;
+    display: none;
   }
 
   @media (min-width: 1000px) {
     .header-promo {
       display: block;
-      text-align: center;
+      font-size: 18px;
       position: absolute;
+      text-align: center;
+      top: calc(50% - 10px);
+      transition: opacity .3s;
       width: 100%;
-      top: calc(50% - 10px)
+      strong {
+        font-family: $font_strong;
+      }
+      &.hide {
+        opacity: 0;
+      }
     }
     .header-content {
       margin: 0 auto;
       width: 960px;
+      padding: 8px 20px;
       position: relative;
     }
     .header-wrapper {
@@ -181,24 +198,28 @@ export default {
     }
 
     .logo {
-      height: 33px;
+      position: static;
+      margin: 0;
     }
-
     .nav {
-      overflow: hidden;
-      opacity: 0;
-      right: 0;
+      width: 350px;
       transform: translateY(-120%);
-      transition: all 0.6s cubic-bezier(0.19, 1, 0.22, 1) 0s;
-      position: absolute;
+      &.open {
+        top: calc(64px - 2px);
+      }
     }
 
-    .nav.open {
-      overflow: auto;
-      opacity: 1;
-      right: 0;
-      top: calc(64px - 2px);
-      transform: translateY(0px);
+    .subscribe-btn {
+      background-color: transparent;
+      border: 1px solid $black;
+      border-radius: 3px;
+      font-size: 16px;
+      color: $black;
+      padding: 4px 15px 5px;
+      position: absolute;
+      right: 45px;
+      top: calc(50% - 15.5px);
+      transition: background-color .2s, color .2s;
     }
 
     .subscribe-btn:hover {

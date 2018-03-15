@@ -30,26 +30,58 @@
   .article-sm {
     border-top: 1px solid $black;
     position:relative;
-    margin: 32px 0;
-  }
-  .article-sm-content {
-    position: absolute;
-    left: 220px;
-    top: 0;
-    .type {
-      padding: 5px 10px 5px 0;
-      font-family: $font_mono;
-      font-size: 16px;
-      text-transform: uppercase;
+    margin: 32px 20px;
+    .article-sm-content {
+      position: relative;
+      left: 110px;
+      top: 0;
+      width: 60%;
+      .type {
+        padding: 5px 10px 5px 0;
+        font-family: $font_mono;
+        font-size: 16px;
+        text-transform: uppercase;
+      }
+      .headline {
+        cursor: pointer;
+        font-size: 18px;
+        font-family: $font_reg;
+        margin-top: 7px;
+      }
     }
-    .headline {
-      cursor: pointer;
-      font-size: 30px;
-      font-family: $font_reg;
-      margin-top: 7px;
+    .article-sm-image > .photo > img {
+      position:absolute;
+      max-width: 96px;
     }
   }
-  .article-sm-image > .photo > img {
-    max-width: 192px;
+
+  @media (min-width: 1000px) {
+    .article-sm {
+      border-top: 1px solid $black;
+      position:relative;
+      margin: 64px 0;
+      width: auto;
+      .article-sm-content {
+        position: relative;
+        left: 220px;
+        top: 0;
+        .type {
+          padding: 5px 10px 5px 0;
+          font-family: $font_mono;
+          font-size: 16px;
+          text-transform: uppercase;
+        }
+        .headline {
+          cursor: pointer;
+          font-size: 30px;
+          font-family: $font_reg;
+          margin-top: 7px;
+        }
+      }
+      .article-sm-image > .photo > img {
+        max-width: 192px;
+        position: absolute;
+      }
+    }
   }
 </style>

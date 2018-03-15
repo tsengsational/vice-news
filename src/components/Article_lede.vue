@@ -28,39 +28,63 @@ export default {
 
 <style lang="scss">
   @import "../assets/styles/settings.scss";
-
-  .article-lede {
-    position: relative;
-    .type {
-      background-color: $white;
-      font-family: $font_mono;
-      font-size: 16px;
-      left:0;
-      padding: 5px 10px 5px 0;
-      position: absolute;
-      text-transform: uppercase;
-      top: 0;
-      z-index: 1;
-    }
-    .headline {
-      cursor: pointer;
-      font-family: $font_condensed_strong;
-      font-size: 76px;
-      line-height: .95;
-      margin: 0 auto;
-      position: relative;
-      top: -76px;
-      text-transform: uppercase;
-      text-align: center;
+    .article-lede {
       width: 90%;
-      span {
+      left: 5%;
+      position: relative;
+      .type{
         background-color: $white;
-        padding: 0 10px;
+        font-family: $font_mono;
+        font-size: 16px;
+        left:0;
+        padding: 5px 10px;
+        position: absolute;
+        text-transform: uppercase;
+        top: 0;
+        z-index: 1;
+      }
+      .headline {
+        cursor: pointer;
+        font-family: $font_condensed_strong;
+        font-size: 7vw;
+        line-height: .95;
+        margin: 0 auto;
+        position: relative;
+        top: 0px;
+        text-transform: uppercase;
+        text-align: left;
+        width: 90%;
+        span {
+          background-color: $white;
+        }
+      }
+      img {
+        width: 90%;
+        position: relative;
+        left: 10%;
+        top: 30px;
       }
     }
-    img {
+
+
+  @media (min-width: 1000px) {
+    .article-lede {
       position: relative;
-      left: 5%;
+      .type {
+        padding: 5px 10px 5px 0;
+      }
+      .headline {
+        font-size: 76px;
+        text-align: center;
+        top: -76px;
+        span {
+          padding: 0 10px;
+        }
+      }
+      img {
+        position: relative;
+        left: 5%;
+      }
     }
   }
 </style>

@@ -30,7 +30,7 @@ export default {
     background-color: $white;
     border: 1px solid $black;
     padding: 30px 20px 0 20px;
-    width: 350px;
+
     a {
       display: block;
       font-family: $font_strong;
@@ -52,6 +52,13 @@ export default {
       font-size: 14px;
       margin: 0 0 15px;
       text-transform: uppercase;
+    }
+  }
+
+  @media (min-width: 1000px) {
+    nav {
+      box-sizing: border-box;
+      width: 350px;
     }
   }
 

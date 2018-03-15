@@ -188,13 +188,12 @@ export default {
       overflow: hidden;
       opacity: 0;
       right: 0;
-      transform: translateY(-130%);
+      transform: translateY(-120%);
       transition: all 0.6s cubic-bezier(0.19, 1, 0.22, 1) 0s;
       position: absolute;
     }
 
     .nav.open {
-      height: auto;
       overflow: auto;
       opacity: 1;
       right: 0;

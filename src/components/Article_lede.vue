@@ -43,6 +43,7 @@ export default {
       z-index: 1;
     }
     .headline {
+      cursor: pointer;
       font-family: $font_condensed_strong;
       font-size: 76px;
       line-height: .95;

@@ -210,6 +210,7 @@ export default {
     }
 
     .subscribe-btn {
+      display:block;
       background-color: transparent;
       border: 1px solid $black;
       border-radius: 3px;

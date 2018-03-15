@@ -95,7 +95,7 @@
         cursor: pointer;
         font-size: 76px;
         font-family: $font_condensed_strong;
-        line-height: .91;
+        line-height: .95;
         margin-left: -0.14em;
         margin-right: -0.14em;
         padding: 0px 0.14em;
